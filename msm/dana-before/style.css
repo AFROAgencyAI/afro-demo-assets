@@ -41,7 +41,7 @@
     .wpz_pattern_8 .wp-block-column a:hover {
       text-decoration: none; }
   .wpz_pattern_8:after {
-    background: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/noise.png") repeat;
+    background: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/dana-before/noise.png") repeat;
     position: absolute;
     display: block;
     content: "";

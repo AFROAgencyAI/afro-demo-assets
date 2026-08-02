@@ -533,11 +533,11 @@ div.navigation a.btn-primary:hover {
 
 @font-face {
   font-family: 'foodica';
-  src:  url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/foodica.eot");
-  src:  url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/foodica.eot") format('embedded-opentype'),
-    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/foodica.ttf") format('truetype'),
-    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/foodica.woff") format('woff'),
-    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/foodica.svg") format('svg');
+  src:  url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/dana-before/foodica.eot");
+  src:  url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/dana-before/foodica.eot") format('embedded-opentype'),
+    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/dana-before/foodica.ttf") format('truetype'),
+    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/dana-before/foodica.woff") format('woff'),
+    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/dana-before/foodica.svg") format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

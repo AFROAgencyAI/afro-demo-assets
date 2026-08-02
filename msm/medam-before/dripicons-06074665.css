@@ -3,11 +3,11 @@
 
 @font-face {
   font-family: "dripicons";
-  src:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/dripicons-bd4510cd.eot");
-  src:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/dripicons-a5d63eda.eot") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/dripicons-d067de75.ttf") format("truetype"),
-    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/dripicons-2a07c360.svg") format("svg"),
-    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/dripicons-571e7e17.woff") format("woff");
+  src:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/medam-before/dripicons-bd4510cd.eot");
+  src:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/medam-before/dripicons-a5d63eda.eot") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/medam-before/dripicons-d067de75.ttf") format("truetype"),
+    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/medam-before/dripicons-2a07c360.svg") format("svg"),
+    url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/medam-before/dripicons-571e7e17.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 

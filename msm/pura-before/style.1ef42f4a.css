@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Phosphor-Bold";
   src:
-    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Bold.52e2dfa1.woff2) format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Bold.f562312d.woff) format("woff"),
-    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Bold.4c01fec8.ttf) format("truetype"),
-    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Bold.4f97c152.svg) format("svg");
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/pura-before/Phosphor-Bold.52e2dfa1.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/pura-before/Phosphor-Bold.f562312d.woff) format("woff"),
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/pura-before/Phosphor-Bold.4c01fec8.ttf) format("truetype"),
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@0cc910b/msm/pura-before/Phosphor-Bold.4f97c152.svg) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
