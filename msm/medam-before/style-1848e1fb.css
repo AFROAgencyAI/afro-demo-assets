@@ -1,0 +1,74 @@
+/*
+Theme Name: Kendall
+Theme URI: https://kendall.qodeinteractive.com/
+Description: A Hip & Creative Multipurpose Theme
+Author: Elated Themes
+Author URI: http://themeforest.net/user/elated-themes
+Version: 1.10.1
+Text Domain: kendall
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, full-width-template, custom-menu, featured-images, flexible-header, post-formats, sticky-post, translation-ready
+
+CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
+*/
+
+h3.eltd-post-title {
+    display: none;
+}
+
+.with-link a {
+    color: #6cbec2 !important;
+    font-weight: 500;
+    border-bottom: 1px solid;
+}
+
+/* AUTHOR BOX */
+.to-byline{ max-width:760px; margin:6px auto 26px; padding:10px 0 14px;
+	border-top:1px solid #e6e0d4; border-bottom:1px solid #e6e0d4;
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,sans-serif;text-align: center; }
+.to-byline__by{ margin:0 0 4px; font-size:15px; color:#33373f; }
+.to-byline__by a{ color:#1F3A5F; font-weight:700; text-decoration:underline;
+	text-underline-offset:3px; }
+.to-byline__by a:hover{ color:#8A5A00; }
+.to-byline__cred{ margin:0 0 6px; font-size:13.5px; font-weight:600;
+	line-height:1.45; color:#8A5A00; }
+.to-byline__date{ margin:0; font-size:13.5px; color:#33373f; }
+.to-byline__date em{ font-style:italic; }
+.to-authorbox{
+	--navy:#1F3A5F; --gold:#8A5A00; --ink:#33373f; --cream:#f7f4ed; --line:#e6e0d4;
+	position:relative; max-width:760px; margin:28px auto; background:var(--cream);
+	border:1px solid var(--line); border-left:6px solid var(--gold); border-radius:4px;
+	padding:24px 30px 26px; overflow:hidden;       /* contains the floated photo */
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,sans-serif;
+	color:var(--ink);
+}
+/* bulletproof circular photo, floated top-left so text wraps beneath it */
+.to-ab__photo{
+	float:left; position:relative; width:118px; height:118px; border-radius:50%;
+	overflow:hidden; margin:4px 24px 10px 0; border:3px solid var(--navy);
+	box-shadow:0 0 0 4px rgba(138,90,0,.14); background:var(--navy);
+}
+.to-ab__photo .to-ab__mono{ position:absolute; inset:0; display:flex; align-items:center;
+	justify-content:center; font-family:Georgia,serif; font-size:42px; font-weight:700; color:#fff; }
+.to-ab__photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; font-size:0; }
+
+.to-ab__eyebrow{ margin:2px 0 4px; font-size:11px; font-weight:700; letter-spacing:.14em;
+	text-transform:uppercase; color:var(--gold); }
+.to-ab__name{ margin:0 0 5px; font-family:Georgia,"Times New Roman",serif; font-weight:700;
+	font-size:25px; line-height:1.12; color:var(--navy); }
+.to-ab__name a{ color:inherit; text-decoration:none; }
+.to-ab__name a:hover{ color:var(--gold); }
+.to-ab__credline{ margin:0 0 13px; font-size:13.5px; font-weight:600; line-height:1.45; color:var(--gold); }
+.to-ab__bio{ margin:0 0 15px; font-family:Georgia,"Times New Roman",serif;
+	font-size:16.5px; line-height:1.6; color:var(--ink); }
+.to-ab__links{ clear:both; padding-top:14px; border-top:1px solid var(--line); }
+.to-ab__links a{ display:inline-block; margin-right:26px; color:var(--navy); font-weight:700;
+	font-size:13.5px; text-decoration:underline; text-underline-offset:3px; }
+.to-ab__links a:hover{ color:var(--gold); }
+@media(max-width:540px){
+	.to-authorbox{ text-align:center; }
+	.to-ab__photo{ float:none; display:block; margin:0 auto 14px; }
+	.to-ab__links a{ display:block; margin:0 0 10px; }
+}
+/* END */
