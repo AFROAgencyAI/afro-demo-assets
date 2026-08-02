@@ -372,7 +372,7 @@ img.script-logo {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url("./office-staff-group-mobile-2023.webp");
+	background-image: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/office-staff-group-mobile-2023.webp");
 	position: relative;
 	z-index: 11;
 	float: right;
@@ -527,27 +527,27 @@ img.homepage-logo {
 
 @media all and (min-width: 700px) {
 .hero-inner {
-	background-image: url("./office-staff-group-tablet-2023.webp");
+	background-image: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/office-staff-group-tablet-2023.webp");
 }
 }
 @media all and (min-width: 1024px) {
 .hero-inner {
-	background-image: url("./office-staff-group-laptop-2023.webp");
+	background-image: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/office-staff-group-laptop-2023.webp");
 }
 }
 @media all and (min-width: 1300px) {
 .hero-inner {
-	background-image: url("./office-staff-group-desktop-2023.webp");
+	background-image: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/office-staff-group-desktop-2023.webp");
 }
 }
 @media all and (min-width: 1600px) {
 .hero-inner {
-	background-image: url("./office-staff-group-widescreen-2023.webp");
+	background-image: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/office-staff-group-widescreen-2023.webp");
 }
 }
 @media all and (min-width: 2000px) {
 .hero-inner {
-	background-image: url("./office-staff-group-widescreen-2023.webp");
+	background-image: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/office-staff-group-widescreen-2023.webp");
 }	
 }
 h1#homepage-title {
@@ -1145,13 +1145,13 @@ img.deco-scroll {
 }
 @media all and (min-width: 0px) and (max-width: 830px) {
 .about-wrap-2 .purple-para-box {
-    background-image:url("./slate-gray.webp");
+    background-image:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/slate-gray.webp");
     background-repeat: no-repeat;
 	background-position: top left;
 	background-size: cover;
 }
 #button-wrapper {
-    background-image:url("./sandstone.jpg");
+    background-image:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/sandstone.jpg");
     background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -3909,7 +3909,7 @@ a.next.page-numbers {
 	background-color: #222;
 }
 .page-id-792 .entry-header {
-	background-image: url("./dr_dana_md_google_review.webp");
+	background-image: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/dana-before/dr_dana_md_google_review.webp");
 	background-position: center center;
 	position: relative;
 }

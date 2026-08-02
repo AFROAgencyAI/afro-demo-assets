@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Linearicons-Free';
-	src:url("./Linearicons-Free-dbef7107.eot");
-	src:url("./Linearicons-Free-9e97ac60.eot") format('embedded-opentype'),
-		url("./Linearicons-Free-a128a4ee.woff2") format('woff2'),
-		url("./Linearicons-Free-68d9cf6d.woff") format('woff'),
-		url("./Linearicons-Free-57526bc1.ttf") format('truetype'),
-		url("./Linearicons-Free-8dae7014.svg") format('svg');
+	src:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Linearicons-Free-dbef7107.eot");
+	src:url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Linearicons-Free-9e97ac60.eot") format('embedded-opentype'),
+		url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Linearicons-Free-a128a4ee.woff2") format('woff2'),
+		url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Linearicons-Free-68d9cf6d.woff") format('woff'),
+		url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Linearicons-Free-57526bc1.ttf") format('truetype'),
+		url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Linearicons-Free-8dae7014.svg") format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

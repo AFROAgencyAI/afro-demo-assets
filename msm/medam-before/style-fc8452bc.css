@@ -1,56 +1,56 @@
 @charset "UTF-8";
 @font-face {
   font-family: "linea-arrows-10";
-  src: url("./linea-arrows-10-073d5c21.eot");
-  src: url("./linea-arrows-10-83c0898e.eot") format("embedded-opentype"), url("./linea-arrows-10-38eb9a23.woff") format("woff"), url("./linea-arrows-10-380a582a.ttf") format("truetype"), url("./linea-arrows-10-178c9b57.svg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-arrows-10-073d5c21.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-arrows-10-83c0898e.eot") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-arrows-10-38eb9a23.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-arrows-10-380a582a.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-arrows-10-178c9b57.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "linea-basic-10";
-  src: url("./linea-basic-10-f5016d31.eot");
-  src: url("./linea-basic-10-16ca59d0.eot") format("embedded-opentype"), url("./linea-basic-10-d9d4e0e2.woff") format("woff"), url("./linea-basic-10-68365417.ttf") format("truetype"), url("./linea-basic-10-6299d1bd.svg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-10-f5016d31.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-10-16ca59d0.eot") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-10-d9d4e0e2.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-10-68365417.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-10-6299d1bd.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "linea-basic-elaboration-10";
-  src: url("./linea-basic-elaboration-10-7885b13c.eot");
-  src: url("./linea-basic-elaboration-10-b2ee085d.eot") format("embedded-opentype"), url("./linea-basic-elaboration-10-0848299c.woff") format("woff"), url("./linea-basic-elaboration-10-4ee5a735.ttf") format("truetype"), url("./linea-basic-elaboration-10-32ed2a88.svg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-elaboration-10-7885b13c.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-elaboration-10-b2ee085d.eot") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-elaboration-10-0848299c.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-elaboration-10-4ee5a735.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-basic-elaboration-10-32ed2a88.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "linea-ecommerce-10";
-  src: url("./linea-ecommerce-10-c662e763.eot");
-  src: url("./linea-ecommerce-10-ef1979e7.eot") format("embedded-opentype"), url("./linea-ecommerce-10-48ac9ed1.woff") format("woff"), url("./linea-ecommerce-10-8c2180d1.ttf") format("truetype"), url("./linea-ecommerce-10-a081dfac.svg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-ecommerce-10-c662e763.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-ecommerce-10-ef1979e7.eot") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-ecommerce-10-48ac9ed1.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-ecommerce-10-8c2180d1.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-ecommerce-10-a081dfac.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "linea-music-10";
-  src: url("./linea-music-10-54884fbb.eot");
-  src: url("./linea-music-10-51cbae29.eot") format("embedded-opentype"), url("./linea-music-10-57d771c8.woff") format("woff"), url("./linea-music-10-6513405d.ttf") format("truetype"), url("./linea-music-10-8ea171a1.svg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-music-10-54884fbb.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-music-10-51cbae29.eot") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-music-10-57d771c8.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-music-10-6513405d.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-music-10-8ea171a1.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "linea-software-10";
-  src: url("./linea-software-10-dfd7bc8a.eot");
-  src: url("./linea-software-10-c7f2af13.eot") format("embedded-opentype"), url("./linea-software-10-dc5acfa5.woff") format("woff"), url("./linea-software-10-cf996480.ttf") format("truetype"), url("./linea-software-10-c78ad0dc.svg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-software-10-dfd7bc8a.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-software-10-c7f2af13.eot") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-software-10-dc5acfa5.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-software-10-cf996480.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-software-10-c78ad0dc.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "linea-weather-10";
-  src: url("./linea-weather-10-d84bff2b.eot");
-  src: url("./linea-weather-10-b322b17e.eot") format("embedded-opentype"), url("./linea-weather-10-0274e459.woff") format("woff"), url("./linea-weather-10-81b9a0a2.ttf") format("truetype"), url("./linea-weather-10-a2fde528.svg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-weather-10-d84bff2b.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-weather-10-b322b17e.eot") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-weather-10-0274e459.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-weather-10-81b9a0a2.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/linea-weather-10-a2fde528.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }

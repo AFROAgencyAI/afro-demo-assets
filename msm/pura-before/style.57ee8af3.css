@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Phosphor-Fill";
   src:
-    url(Phosphor-Fill.f191035c.woff2) format("woff2"),
-    url(Phosphor-Fill.15759ce4.woff) format("woff"),
-    url(Phosphor-Fill.941c06e2.ttf) format("truetype"),
-    url(Phosphor-Fill.e3fd95e6.svg) format("svg");
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Fill.f191035c.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Fill.15759ce4.woff) format("woff"),
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Fill.941c06e2.ttf) format("truetype"),
+    url(https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/pura-before/Phosphor-Fill.e3fd95e6.svg) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

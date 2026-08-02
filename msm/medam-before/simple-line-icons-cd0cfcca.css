@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'simple-line-icons';
-	src: url("./Simple-Line-Icons-598d075b.eot");
-	src: url("./Simple-Line-Icons-b80263a6.eot") format('embedded-opentype'), url("./Simple-Line-Icons-2f1bb72d.ttf") format('truetype'), url("./Simple-Line-Icons-56e21738.woff2") format('woff2'), url("./Simple-Line-Icons-168346a6.woff") format('woff'), url("./Simple-Line-Icons-d5071fdd.svg") format('svg');
+	src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Simple-Line-Icons-598d075b.eot");
+	src: url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Simple-Line-Icons-b80263a6.eot") format('embedded-opentype'), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Simple-Line-Icons-2f1bb72d.ttf") format('truetype'), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Simple-Line-Icons-56e21738.woff2") format('woff2'), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Simple-Line-Icons-168346a6.woff") format('woff'), url("https://cdn.jsdelivr.net/gh/AFROAgencyAI/afro-demo-assets@CDN_COMMIT_TOKEN/msm/medam-before/Simple-Line-Icons-d5071fdd.svg") format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
