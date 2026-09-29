@@ -661,10 +661,10 @@
   text-transform: uppercase;
 }
 
-#ebmm-root .mobile-menu-label + a,
-#ebmm-root .mobile-menu-label + a ~ a[data-open-guide] {
-  padding-left: 14px;
-  background: linear-gradient(90deg, var(--color-blush), transparent 72%);
+
+#ebmm-root .mobile-menu a.mobile-menu-sub {
+  padding-left: 20px;
+  background: var(--color-blush);
 }
 
 #ebmm-root .founder-first {
@@ -991,8 +991,7 @@
   #ebmm-root[data-style="hybrid"] .hero-fullbleed h1 { font-size: clamp(38px, 10.8vw, 50px); }
   #ebmm-root .mobile-menu { padding-top: 12px; }
   #ebmm-root .mobile-menu a { min-height: 50px; align-items: center; font-size: 14px; }
-  #ebmm-root .mobile-menu-label + a,
-  #ebmm-root .mobile-menu-label + a ~ a[data-open-guide] { padding-left: 12px; }
+  #ebmm-root .mobile-menu a.mobile-menu-sub { padding-left: 20px; }
   #ebmm-root .founder-first { margin-top: 0; }
   #ebmm-root .service-card-grid { grid-template-columns: minmax(0, 1fr); border-left: 0; }
   #ebmm-root .service-card, #ebmm-root .service-card--wide, #ebmm-root .service-card:last-child { grid-column: 1; border-left: 1px solid var(--color-rule); }
