@@ -1081,6 +1081,14 @@
   white-space: nowrap;
 }
 
+
+#ebmm-root .hero h1 .hero-br-mobile { display: none; }
+#ebmm-root .hero h1 .hero-tail { display: block; }
+@media (max-width: 680px) {
+  #ebmm-root .hero h1 .hero-br-mobile { display: inline; }
+  #ebmm-root .hero h1 .hero-tail { display: inline; }
+}
+
 #ebmm-root .hero-fullbleed .hero-description {
   max-width: 57ch;
   font-size: 16px;
