@@ -846,7 +846,7 @@ const CONFIG = {
 </script>
 <script>
 (function(){
-  var m=(location.search.match(/m=(\w+)/)||[])[1]||'fixed';
+  var m='fixed';
   document.documentElement.classList.add('m-'+m);
   ['l','d','s'].forEach(function(k){var d=document.createElement('div');d.className='dbg-strip';d.id='dbg-'+k;document.body.appendChild(d)});
   var bar=document.getElementById('sticky-cta'),out=document.createElement('div');out.id='dbg-out';bar.appendChild(out);
