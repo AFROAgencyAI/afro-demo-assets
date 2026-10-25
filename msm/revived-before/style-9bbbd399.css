@@ -1,0 +1,1518 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: A plain-vanilla &amp; lightweight theme for Elementor page builder
+Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 2.7.1.1791399588
+Updated: 2026-10-07 14:59:48
+
+*/
+
+.page-content a.btn {
+    text-decoration: none;
+}
+.site-main {
+    z-index: 1;
+    position: relative;
+}
+.sticky .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.js-nav-scroll {
+    transition: all 0.3s ease 0s;
+    z-index: 911;
+}
+
+.js-nav-scroll.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+/* @media (max-width: 1024px) {
+	.js-nav-scroll.sticky,
+	.sticky .navbar {
+		position: relative !important;
+	}
+
+} */
+
+@media (min-width: 992px) {
+	.js-nav-scroll.sticky {
+		transform: translateY(-10px);
+		top: 0;
+	}
+}
+
+.custom-html-page .elementor-widget {
+	margin-block-end: unset;
+}
+
+/* ==========================================================================
+   RMA Location Page (Phase 2b) - section-scoped (.rma-* roots)
+   Source of truth for authoring remains codebase/new-sections/
+   ========================================================================== */
+
+/* --- _shared/tokens.css --- */
+/* RMA section tokens (Figma). Defined on each section root so sections
+   are reusable without a page wrapper. .rma-location-page remains as a
+   transition host for already-pasted Elementor widgets.
+   Fonts load from the live site Media Library for local preview.
+*/
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url("Lato-Regular-8c4b6d02.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 200;
+  src: url("Lato-Thin-29d7a197.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  src: url("Lato-Semibold-fc0ae134.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  src: url("Lato-Medium-cf2721e9.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  src: url("Lato-Hairline-d7154155.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url("Lato-Bold-672ccc5e.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 800;
+  src: url("Lato-Heavy-82b19cc2.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: url("Lato-Light-ec8bc640.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Alta';
+  font-weight: 400;
+  src: url("Alta_regular-f036a164.otf") format('OpenType');
+}
+
+.rma-hero,
+.rma-about-contact,
+.rma-find-us,
+.rma-featured-services,
+.rma-team,
+.rma-testimonials,
+.rma-faq,
+.rma-bottom-cta,
+.rma-location-page {
+  --rma-color-coral: #d67165;
+  --rma-color-coral-alt: #d55f55;
+  --rma-color-peach: #fff6f0;
+  --rma-color-gray: #f8f9fa;
+  --rma-color-text: #131313;
+  --rma-color-heading: #333333;
+  --rma-color-text-muted: #555555;
+  --rma-color-white: #ffffff;
+  --rma-color-black: #000000;
+  --rma-font-heading: Alta, Georgia, serif;
+  --rma-font-body: Lato, Helvetica, Arial, sans-serif;
+  --rma-content-width: 1320px;
+  --rma-content-width-narrow: 1074px;
+  --rma-radius: 6px;
+  --rma-radius-card: 10px;
+
+  /* Elevations / shadows */
+  --rma-elevation: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --rma-elevation-soft: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --rma-elevation-card: 0 8px 16px rgba(0, 0, 0, 0.03);
+
+  /* Extra colors used across sections */
+  --rma-color-border: #e9ecef;
+  --rma-color-divider: #d5d8dc;
+  --rma-color-star: #f5c518;
+  --rma-color-text-secondary: #54595f;
+  --rma-color-shark: #212529;
+
+  /* Section vertical padding (desktop defaults; mobile overrides below). */
+  --rma-section-pad-medium: 75px;
+  --rma-section-pad-large: 100px;
+
+  /* Typography */
+  --rma-font-size-h2: 37.5px;
+  --rma-line-height-h2: 48px;
+  --rma-font-size-body: 16px;
+  --rma-line-height-body: 24px;
+  --rma-font-size-card-title: 22px;
+  --rma-line-height-card-title: 28.8px;
+  --rma-font-size-name: 20px;
+  --rma-control-size: 44px;
+
+  /* Buttons */
+  --rma-btn-font-size: 14px;
+  --rma-btn-padding-y: 10px;
+  --rma-btn-padding-x: 40px;
+  --rma-btn-radius: var(--rma-radius);
+  --rma-btn-shadow: var(--rma-elevation);
+
+  color: var(--rma-color-text);
+  font-family: var(--rma-font-body);
+  font-size: var(--rma-font-size-body);
+  line-height: var(--rma-line-height-body);
+}
+
+@media (max-width: 767.98px) {
+  .rma-hero,
+  .rma-about-contact,
+  .rma-find-us,
+  .rma-featured-services,
+  .rma-team,
+  .rma-testimonials,
+  .rma-faq,
+  .rma-bottom-cta,
+  .rma-location-page {
+    --rma-section-pad-medium: 48px;
+    --rma-section-pad-large: 64px;
+  }
+}
+
+/* Stub preview label only; remove when section markup is built. */
+.rma-section-stub {
+  margin: 0;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.rma-section-stub__label {
+  margin: 0;
+  font-family: var(--rma-font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--rma-color-text-muted);
+}
+
+/* --- _shared/utilities.css --- */
+/* Shared section utilities. Generic classes (.btn, .bg-*, h1-p) stay
+   scoped under RMA section roots so Bootstrap / Elementor styles do not win.
+   .rma-location-page remains as a transition host for already-pasted widgets.
+*/
+
+/* -------------------------------------------------------------------------
+   Backgrounds (applied on the section root alongside .rma-*)
+   ------------------------------------------------------------------------- */
+
+.rma-hero.bg-peach,
+.rma-about-contact.bg-peach,
+.rma-find-us.bg-peach,
+.rma-featured-services.bg-peach,
+.rma-team.bg-peach,
+.rma-testimonials.bg-peach,
+.rma-faq.bg-peach,
+.rma-bottom-cta.bg-peach,
+.rma-location-page .bg-peach {
+  background-color: var(--rma-color-peach);
+}
+
+.rma-hero.bg-white,
+.rma-about-contact.bg-white,
+.rma-find-us.bg-white,
+.rma-featured-services.bg-white,
+.rma-team.bg-white,
+.rma-testimonials.bg-white,
+.rma-faq.bg-white,
+.rma-bottom-cta.bg-white,
+.rma-location-page .bg-white {
+  background-color: var(--rma-color-white);
+}
+
+.rma-hero.bg-gray,
+.rma-about-contact.bg-gray,
+.rma-find-us.bg-gray,
+.rma-featured-services.bg-gray,
+.rma-team.bg-gray,
+.rma-testimonials.bg-gray,
+.rma-faq.bg-gray,
+.rma-bottom-cta.bg-gray,
+.rma-location-page .bg-gray {
+  background-color: var(--rma-color-gray);
+}
+
+/* -------------------------------------------------------------------------
+   Section padding (applied on the section root alongside .rma-*)
+   ------------------------------------------------------------------------- */
+
+.rma-hero.section-padding-medium,
+.rma-about-contact.section-padding-medium,
+.rma-find-us.section-padding-medium,
+.rma-featured-services.section-padding-medium,
+.rma-team.section-padding-medium,
+.rma-testimonials.section-padding-medium,
+.rma-faq.section-padding-medium,
+.rma-bottom-cta.section-padding-medium,
+.rma-location-page .section-padding-medium {
+  padding-top: var(--rma-section-pad-medium);
+  padding-bottom: var(--rma-section-pad-medium);
+}
+
+.rma-hero.section-padding-large,
+.rma-about-contact.section-padding-large,
+.rma-find-us.section-padding-large,
+.rma-featured-services.section-padding-large,
+.rma-team.section-padding-large,
+.rma-testimonials.section-padding-large,
+.rma-faq.section-padding-large,
+.rma-bottom-cta.section-padding-large,
+.rma-location-page .section-padding-large {
+  padding-top: var(--rma-section-pad-large);
+  padding-bottom: var(--rma-section-pad-large);
+}
+
+/* Same-bg collapse: use an explicit class on the second band.
+   Do not rely on adjacent sibling selectors; Elementor HTML widgets
+   insert wrappers between sections and break + combinators. */
+.rma-hero.section-padding-collapse-top,
+.rma-about-contact.section-padding-collapse-top,
+.rma-find-us.section-padding-collapse-top,
+.rma-featured-services.section-padding-collapse-top,
+.rma-team.section-padding-collapse-top,
+.rma-testimonials.section-padding-collapse-top,
+.rma-faq.section-padding-collapse-top,
+.rma-bottom-cta.section-padding-collapse-top,
+.rma-location-page .section-padding-collapse-top {
+  padding-top: 0;
+}
+
+/* -------------------------------------------------------------------------
+   Typography
+   ------------------------------------------------------------------------- */
+
+.rma-hero h1,
+.rma-hero h2,
+.rma-hero h3,
+.rma-hero h4,
+.rma-hero h5,
+.rma-hero h6,
+.rma-about-contact h1,
+.rma-about-contact h2,
+.rma-about-contact h3,
+.rma-about-contact h4,
+.rma-about-contact h5,
+.rma-about-contact h6,
+.rma-find-us h1,
+.rma-find-us h2,
+.rma-find-us h3,
+.rma-find-us h4,
+.rma-find-us h5,
+.rma-find-us h6,
+.rma-featured-services h1,
+.rma-featured-services h2,
+.rma-featured-services h3,
+.rma-featured-services h4,
+.rma-featured-services h5,
+.rma-featured-services h6,
+.rma-team h1,
+.rma-team h2,
+.rma-team h3,
+.rma-team h4,
+.rma-team h5,
+.rma-team h6,
+.rma-testimonials h1,
+.rma-testimonials h2,
+.rma-testimonials h3,
+.rma-testimonials h4,
+.rma-testimonials h5,
+.rma-testimonials h6,
+.rma-faq h1,
+.rma-faq h2,
+.rma-faq h3,
+.rma-faq h4,
+.rma-faq h5,
+.rma-faq h6,
+.rma-bottom-cta h1,
+.rma-bottom-cta h2,
+.rma-bottom-cta h3,
+.rma-bottom-cta h4,
+.rma-bottom-cta h5,
+.rma-bottom-cta h6,
+.rma-location-page h1,
+.rma-location-page h2,
+.rma-location-page h3,
+.rma-location-page h4,
+.rma-location-page h5,
+.rma-location-page h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--rma-font-heading);
+  font-weight: 400;
+  color: var(--rma-color-heading);
+}
+
+.rma-hero h1,
+.rma-hero h2,
+.rma-about-contact h1,
+.rma-about-contact h2,
+.rma-find-us h1,
+.rma-find-us h2,
+.rma-featured-services h1,
+.rma-featured-services h2,
+.rma-team h1,
+.rma-team h2,
+.rma-testimonials h1,
+.rma-testimonials h2,
+.rma-faq h1,
+.rma-faq h2,
+.rma-bottom-cta h1,
+.rma-bottom-cta h2,
+.rma-location-page h1,
+.rma-location-page h2 {
+  font-size: var(--rma-font-size-h2);
+  line-height: var(--rma-line-height-h2);
+}
+
+.rma-hero p,
+.rma-about-contact p,
+.rma-find-us p,
+.rma-featured-services p,
+.rma-team p,
+.rma-testimonials p,
+.rma-faq p,
+.rma-bottom-cta p,
+.rma-location-page p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--rma-font-body);
+  font-size: var(--rma-font-size-body);
+  line-height: var(--rma-line-height-body);
+  color: var(--rma-color-text-muted);
+}
+
+.rma-hero a:not(.btn),
+.rma-about-contact a:not(.btn),
+.rma-find-us a:not(.btn),
+.rma-featured-services a:not(.btn),
+.rma-team a:not(.btn),
+.rma-testimonials a:not(.btn),
+.rma-faq a:not(.btn),
+.rma-bottom-cta a:not(.btn),
+.rma-location-page a:not(.btn) {
+  color: var(--rma-color-coral-alt);
+  text-decoration: underline;
+}
+
+.rma-hero a:not(.btn):hover,
+.rma-about-contact a:not(.btn):hover,
+.rma-find-us a:not(.btn):hover,
+.rma-featured-services a:not(.btn):hover,
+.rma-team a:not(.btn):hover,
+.rma-testimonials a:not(.btn):hover,
+.rma-faq a:not(.btn):hover,
+.rma-bottom-cta a:not(.btn):hover,
+.rma-location-page a:not(.btn):hover {
+  color: var(--rma-color-coral);
+}
+
+/* -------------------------------------------------------------------------
+   Buttons
+   .btn = shared shape; .btn-primary / .btn-secondary = color only
+   Primary = black; secondary = coral (matches live York pattern)
+   ------------------------------------------------------------------------- */
+
+.rma-hero .btn,
+.rma-about-contact .btn,
+.rma-find-us .btn,
+.rma-featured-services .btn,
+.rma-team .btn,
+.rma-testimonials .btn,
+.rma-faq .btn,
+.rma-bottom-cta .btn,
+.rma-location-page .btn {
+  display: inline-block;
+  padding: var(--rma-btn-padding-y) var(--rma-btn-padding-x);
+  border: 1px solid transparent;
+  border-radius: var(--rma-btn-radius);
+  font-family: var(--rma-font-body);
+  font-size: var(--rma-btn-font-size);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: var(--rma-btn-shadow);
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.rma-hero .btn-primary,
+.rma-about-contact .btn-primary,
+.rma-find-us .btn-primary,
+.rma-featured-services .btn-primary,
+.rma-team .btn-primary,
+.rma-testimonials .btn-primary,
+.rma-faq .btn-primary,
+.rma-bottom-cta .btn-primary,
+.rma-location-page .btn-primary {
+  color: var(--rma-color-white);
+  background-color: var(--rma-color-black);
+  border-color: var(--rma-color-black);
+}
+
+.rma-hero .btn-primary:hover,
+.rma-hero .btn-primary:focus,
+.rma-about-contact .btn-primary:hover,
+.rma-about-contact .btn-primary:focus,
+.rma-find-us .btn-primary:hover,
+.rma-find-us .btn-primary:focus,
+.rma-featured-services .btn-primary:hover,
+.rma-featured-services .btn-primary:focus,
+.rma-team .btn-primary:hover,
+.rma-team .btn-primary:focus,
+.rma-testimonials .btn-primary:hover,
+.rma-testimonials .btn-primary:focus,
+.rma-faq .btn-primary:hover,
+.rma-faq .btn-primary:focus,
+.rma-bottom-cta .btn-primary:hover,
+.rma-bottom-cta .btn-primary:focus,
+.rma-location-page .btn-primary:hover,
+.rma-location-page .btn-primary:focus {
+  color: var(--rma-color-white);
+  background-color: var(--rma-color-coral);
+  border-color: var(--rma-color-coral);
+}
+
+.rma-hero .btn-secondary,
+.rma-about-contact .btn-secondary,
+.rma-find-us .btn-secondary,
+.rma-featured-services .btn-secondary,
+.rma-team .btn-secondary,
+.rma-testimonials .btn-secondary,
+.rma-faq .btn-secondary,
+.rma-bottom-cta .btn-secondary,
+.rma-location-page .btn-secondary {
+  color: var(--rma-color-white);
+  background-color: var(--rma-color-coral);
+  border-color: var(--rma-color-coral);
+}
+
+.rma-hero .btn-secondary:hover,
+.rma-hero .btn-secondary:focus,
+.rma-about-contact .btn-secondary:hover,
+.rma-about-contact .btn-secondary:focus,
+.rma-find-us .btn-secondary:hover,
+.rma-find-us .btn-secondary:focus,
+.rma-featured-services .btn-secondary:hover,
+.rma-featured-services .btn-secondary:focus,
+.rma-team .btn-secondary:hover,
+.rma-team .btn-secondary:focus,
+.rma-testimonials .btn-secondary:hover,
+.rma-testimonials .btn-secondary:focus,
+.rma-faq .btn-secondary:hover,
+.rma-faq .btn-secondary:focus,
+.rma-bottom-cta .btn-secondary:hover,
+.rma-bottom-cta .btn-secondary:focus,
+.rma-location-page .btn-secondary:hover,
+.rma-location-page .btn-secondary:focus {
+  color: var(--rma-color-white);
+  background-color: var(--rma-color-coral-alt);
+  border-color: var(--rma-color-coral-alt);
+}
+
+/* -------------------------------------------------------------------------
+   Carousel base (shared by featured-services + testimonials)
+   ------------------------------------------------------------------------- */
+
+/* Wide horizontal tracks must not expand Elementor flex columns
+   (flex items default to min-width: auto). */
+.elementor-column:has(.rma-carousel),
+.elementor-widget-wrap:has(.rma-carousel),
+.elementor-element:has(.rma-carousel),
+.elementor-widget:has(.rma-carousel),
+.elementor-widget-container:has(.rma-carousel) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.rma-featured-services,
+.rma-testimonials,
+.rma-carousel,
+.rma-carousel__viewport {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.rma-carousel__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.rma-carousel__track {
+  display: flex;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.rma-carousel__slide {
+  min-width: 0;
+}
+
+/* --- hero/hero.css --- */
+/* Hero - Figma section 1 (4013:1084)
+   Background image is an HTML img (img.rma-hero__bg) for LCP priority. */
+
+.rma-hero {
+  position: relative;
+  background-color: var(--rma-color-black);
+}
+
+img.rma-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  pointer-events: none;
+}
+
+.rma-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.rma-hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.rma-hero h1 {
+  margin-bottom: 16px;
+  color: var(--rma-color-white);
+  font-size: 38.9px;
+  line-height: 40px;
+}
+
+p.rma-hero__lead {
+  max-width: 38em;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--rma-color-white);
+}
+
+.rma-hero__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 48px;
+  border-radius: var(--rma-radius);
+  background-color: var(--rma-color-peach);
+}
+
+.rma-hero__card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rma-hero h2.rma-hero__card-title {
+  font-family: var(--rma-font-body);
+  font-size: 20px;
+  line-height: 24px;
+  color: #151515;
+}
+
+.rma-hero__card p {
+  color: var(--rma-color-text-muted);
+}
+
+.rma-hero__btn {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .rma-hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  p.rma-hero__lead {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .rma-hero__card {
+    padding: 32px;
+  }
+}
+
+/* --- about-contact/about-contact.css --- */
+/* About / contact - Figma section 2 (4020:212)
+   Image URLs are content: set via <img src> in HTML. */
+
+.rma-about-contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.rma-about-contact__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.rma-about-contact__intro h2 {
+  max-width: 18em;
+}
+
+.rma-about-contact__media {
+  position: relative;
+  width: 100%;
+  max-width: 614px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.rma-about-contact__burst {
+  position: absolute;
+  top: 0;
+  left: 8.3%;
+  z-index: 0;
+  width: 26%;
+  margin-top: 80%;
+  pointer-events: none;
+  transform: scaleY(-1);
+}
+
+.rma-about-contact__burst svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rma-about-contact__img-lg {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  height: auto;
+  aspect-ratio: 553 / 475;
+  overflow: hidden;
+  border-radius: var(--rma-radius);
+  box-shadow: var(--rma-elevation);
+}
+
+.rma-about-contact__img-lg img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 553 / 475;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.rma-about-contact__img-sm {
+  position: relative;
+  z-index: 2;
+  width: 64%;
+  margin-top: -16.3%;
+  margin-left: 36%;
+  padding: 12px 0 0 12px;
+  background-color: var(--rma-color-white);
+  border-radius: var(--rma-radius-card);
+}
+
+.rma-about-contact__img-sm img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 381 / 266;
+  object-fit: cover;
+  border-radius: var(--rma-radius);
+  box-shadow: var(--rma-elevation);
+}
+
+.rma-about-contact__card {
+  width: 100%;
+  padding: 32px;
+  border-radius: var(--rma-radius-card);
+  background-color: var(--rma-color-gray);
+}
+
+.rma-about-contact h3.rma-about-contact__card-title {
+  margin-bottom: 20px;
+  font-family: var(--rma-font-body);
+  font-size: 24px;
+  line-height: 28.8px;
+  color: var(--rma-color-heading);
+}
+
+.rma-about-contact__card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.rma-about-contact__details,
+.rma-about-contact__hours {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.rma-about-contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rma-about-contact__hours {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rma-about-contact__row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.rma-about-contact__row--top {
+  align-items: flex-start;
+}
+
+.rma-about-contact__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 24px;
+  color: var(--rma-color-coral);
+}
+
+.rma-about-contact__icon svg {
+  display: block;
+}
+
+.rma-about-contact__row p,
+.rma-about-contact__hours-list {
+  margin: 0;
+  color: var(--rma-color-text-muted);
+}
+
+.rma-about-contact__hours-label {
+  font-weight: 700;
+}
+
+.rma-about-contact__hours-list {
+  padding: 0;
+  list-style: none;
+}
+
+.rma-about-contact__hours-list li {
+  margin: 0;
+  color: var(--rma-color-text-muted);
+  font-size: var(--rma-font-size-body);
+  line-height: var(--rma-line-height-body);
+}
+
+@media (max-width: 991.98px) {
+  .rma-about-contact__content {
+    gap: 32px;
+  }
+
+  .rma-about-contact__media {
+    max-width: 480px;
+  }
+
+  .rma-about-contact__card {
+    padding: 24px;
+  }
+
+  .rma-about-contact__card-grid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rma-about-contact__intro h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .rma-about-contact h3.rma-about-contact__card-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* --- find-us/find-us.css --- */
+/* Find us + map - Figma section 3 (4019:139) */
+
+.rma-find-us__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 38.375rem;
+}
+
+.rma-find-us__map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 632 / 506;
+  border-radius: var(--rma-radius);
+  box-shadow: var(--rma-elevation);
+  background-color: var(--rma-color-white);
+}
+
+.rma-find-us__map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 991.98px) {
+  .rma-find-us__content {
+    max-width: none;
+  }
+
+  .rma-find-us__map {
+    aspect-ratio: 16 / 12;
+  }
+}
+
+/* --- featured-services/featured-services.css --- */
+/* Featured services - Figma section 4 (4020:210) */
+
+.rma-featured-services__intro {
+  margin-bottom: 32px;
+}
+
+.rma-featured-services__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.rma-featured-services__copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Image carousel --------------------------------------------------------- */
+
+.rma-featured-services__carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--rma-radius);
+}
+
+.rma-featured-services .rma-carousel__slide {
+  flex: 0 0 100%;
+}
+
+.rma-featured-services .rma-carousel__slide img {
+  display: block;
+  width: 100%;
+  height: 363px;
+  object-fit: cover;
+  border-radius: var(--rma-radius);
+}
+
+.rma-featured-services__carousel-controls {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+
+.rma-featured-services .rma-carousel__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--rma-color-white);
+  cursor: pointer;
+  pointer-events: auto;
+  line-height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.rma-featured-services .rma-carousel__btn:hover,
+.rma-featured-services .rma-carousel__btn:focus {
+  opacity: 0.85;
+  outline: none;
+  background: transparent;
+  background-color: transparent;
+  color: var(--rma-color-white);
+  text-decoration: none;
+}
+
+.rma-featured-services .rma-carousel__btn:focus-visible {
+  outline: 2px solid var(--rma-color-white);
+  outline-offset: 4px;
+}
+
+/* Benefits list ---------------------------------------------------------- */
+
+.rma-featured-services__benefits {
+  margin-bottom: 75px;
+}
+
+.rma-featured-services p.rma-featured-services__benefits-lead {
+  margin-bottom: 15px;
+}
+
+.rma-featured-services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rma-featured-services__list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  color: var(--rma-color-text-muted);
+  font-size: var(--rma-font-size-body);
+  line-height: var(--rma-line-height-body);
+}
+
+.rma-featured-services__list li:last-child {
+  margin-bottom: 0;
+}
+
+.rma-featured-services__list li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--rma-color-text-muted);
+}
+
+.rma-featured-services__list strong {
+  color: var(--rma-color-heading);
+  font-weight: 700;
+}
+
+/* Service cards ---------------------------------------------------------- */
+
+.rma-featured-services__cards {
+  margin-bottom: 32px;
+}
+
+.rma-featured-services__card {
+  height: 100%;
+  padding: 30px 24px;
+  border: 1px solid var(--rma-color-border);
+  border-radius: var(--rma-radius-card);
+  background-color: var(--rma-color-white);
+  box-shadow: var(--rma-elevation-card);
+}
+
+.rma-featured-services h3.rma-featured-services__card-title {
+  margin-bottom: 20px;
+  font-family: var(--rma-font-body);
+  font-size: var(--rma-font-size-card-title);
+  font-weight: 400;
+  line-height: var(--rma-line-height-card-title);
+  color: var(--rma-color-heading);
+}
+
+.rma-featured-services__cta {
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .rma-featured-services .rma-carousel__slide img {
+    height: 280px;
+  }
+
+  .rma-featured-services__benefits {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .rma-featured-services .rma-carousel__slide img {
+    height: 220px;
+  }
+
+  .rma-featured-services__card {
+    padding: 24px 20px;
+  }
+}
+
+/* --- team/team.css --- */
+/* Team - Figma section 5 (4015:1232)
+   Image URL is content: set via src on img.rma-team__image. */
+
+img.rma-team__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 526 / 351;
+  object-fit: cover;
+  border-radius: var(--rma-radius);
+  box-shadow: var(--rma-elevation-soft);
+}
+
+.rma-team__copy h2 {
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.rma-team__copy p + p {
+  margin-top: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .rma-team__copy h2 {
+    padding-top: 0;
+  }
+}
+
+/* --- testimonials/testimonials.css --- */
+/* Testimonials - Figma section 6 (4029:63)
+   Cards are live [webfx_reviews] output restyled to match RMA design. */
+
+.rma-testimonials h2.rma-testimonials__heading {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.rma-testimonials__carousel {
+  width: 100%;
+}
+
+.rma-testimonials .rma-carousel__track {
+  align-items: stretch;
+}
+
+.rma-testimonials .rma-carousel__slide {
+  display: flex;
+}
+
+/* --- webfx_reviews shortcode -> RMA card look --- */
+
+.rma-testimonials .webfx-review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  min-height: 325px;
+  padding: 25px;
+  border: 0;
+  border-bottom: 5px solid var(--rma-color-coral-alt);
+  border-radius: var(--rma-radius-card);
+  background-color: var(--rma-color-white);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.rma-testimonials .webfx-review-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+/* Shortcode prints author then stars; design wants stars first. */
+.rma-testimonials .webfx-review-author {
+  order: 2;
+  margin: 0;
+  font-family: var(--rma-font-body);
+  font-size: var(--rma-font-size-name);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--rma-color-heading);
+  text-align: left;
+}
+
+.rma-testimonials .webfx-review-rating {
+  order: 1;
+  margin: 0;
+}
+
+.rma-testimonials .webfx-stars {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2px;
+  color: var(--rma-color-star);
+  line-height: 0;
+  font-size: 20px;
+}
+
+.rma-testimonials .webfx-star {
+  display: inline-block;
+  line-height: 1;
+}
+
+.rma-testimonials .webfx-star-filled {
+  color: var(--rma-color-star);
+}
+
+.rma-testimonials .webfx-review-content {
+  flex: 1 1 auto;
+  width: 100%;
+  margin: 0;
+  color: var(--rma-color-text-muted);
+  text-align: left;
+}
+
+.rma-testimonials .webfx-review-content p {
+  margin: 0;
+  color: var(--rma-color-text-muted);
+}
+
+.rma-testimonials .webfx-review-content p p {
+  margin: 0;
+}
+
+.rma-testimonials .webfx-review-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 4px;
+  font-size: 13px;
+  line-height: 1.3;
+  color: var(--rma-color-text-muted);
+}
+
+.rma-testimonials .webfx-review-date,
+.rma-testimonials .webfx-review-site {
+  flex: 0 1 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.rma-testimonials .webfx-review-date {
+  color: var(--rma-color-text-muted);
+}
+
+.rma-testimonials .webfx-review-site a {
+  color: var(--rma-color-coral);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-transform: capitalize;
+}
+
+.rma-testimonials .webfx-review-site a:hover,
+.rma-testimonials .webfx-review-site a:focus {
+  color: var(--rma-color-heading);
+}
+
+.rma-testimonials .webfx-reviews-no-results {
+  margin: 0;
+  text-align: center;
+  color: var(--rma-color-text-muted);
+}
+
+/* Legacy hard-coded card classes (kept for any leftover markup). */
+.rma-testimonials__card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  min-height: 325px;
+  padding: 25px;
+  border: 0;
+  border-bottom: 5px solid var(--rma-color-coral-alt);
+  border-radius: var(--rma-radius-card);
+  background-color: var(--rma-color-white);
+}
+
+.rma-testimonials__stars {
+  display: flex;
+  gap: 2px;
+  color: var(--rma-color-star);
+  line-height: 0;
+}
+
+.rma-testimonials h3.rma-testimonials__name {
+  margin: 0;
+  font-family: var(--rma-font-body);
+  font-size: var(--rma-font-size-name);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--rma-color-heading);
+}
+
+.rma-testimonials__quote {
+  margin: 0;
+  color: var(--rma-color-text-muted);
+}
+
+.rma-testimonials__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.rma-testimonials .rma-carousel__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--rma-control-size);
+  height: var(--rma-control-size);
+  padding: 0;
+  border: 1px solid var(--rma-color-coral);
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--rma-color-coral);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.rma-testimonials .rma-carousel__prev svg {
+  transform: translateX(-1px);
+}
+
+.rma-testimonials .rma-carousel__next svg {
+  transform: translateX(1px);
+}
+
+.rma-testimonials .rma-carousel__btn:hover,
+.rma-testimonials .rma-carousel__btn:focus {
+  background-color: var(--rma-color-coral);
+  border-color: var(--rma-color-coral);
+  color: var(--rma-color-white);
+  outline: none;
+}
+
+.rma-testimonials .rma-carousel__btn:focus-visible {
+  outline: 2px solid var(--rma-color-coral-alt);
+  outline-offset: 3px;
+}
+
+.rma-testimonials.is-empty .rma-carousel__controls {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .rma-testimonials .webfx-review-item,
+  .rma-testimonials__card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .rma-testimonials h2.rma-testimonials__heading {
+    margin-bottom: 24px;
+  }
+
+  .rma-testimonials__controls {
+    margin-top: 24px;
+  }
+}
+
+/* --- faq/faq.css --- */
+/* FAQ accordion - Figma section 7 (4020:209) */
+
+.rma-faq__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: var(--rma-content-width-narrow);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rma-faq__title {
+  width: 100%;
+  text-align: center;
+}
+
+.rma-faq__list {
+  width: 100%;
+}
+
+.rma-faq__item:not(:last-child) {
+  border-bottom: 1px solid var(--rma-color-divider);
+}
+
+.rma-faq__trigger {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 16px 20px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: var(--rma-color-text-secondary);
+}
+
+.rma-faq .rma-faq__trigger:hover,
+.rma-faq .rma-faq__trigger:focus,
+.rma-faq .rma-faq__trigger:active {
+  background: transparent;
+  background-color: transparent;
+  color: var(--rma-color-text-secondary);
+  text-decoration: none;
+}
+
+.rma-faq .rma-faq__trigger:hover .rma-faq__question,
+.rma-faq .rma-faq__trigger:focus .rma-faq__question,
+.rma-faq .rma-faq__trigger:active .rma-faq__question {
+  color: var(--rma-color-text-secondary);
+}
+
+.rma-faq__trigger:focus-visible {
+  outline: 2px solid var(--rma-color-coral);
+  outline-offset: 2px;
+}
+
+.rma-faq__question {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--rma-font-body);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--rma-color-text-secondary);
+}
+
+.rma-faq__icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 11px;
+  color: var(--rma-color-shark);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.rma-faq__icon svg {
+  display: block;
+  width: 20px;
+  height: 11px;
+}
+
+.rma-faq__item.is-open .rma-faq__icon {
+  color: var(--rma-color-coral-alt);
+  transform: scaleY(-1);
+}
+
+.rma-faq__panel {
+  padding: 0 20px 25px;
+}
+
+.rma-faq__panel[hidden] {
+  display: none;
+}
+
+.rma-faq__panel p {
+  color: var(--rma-color-text-muted);
+}
+
+.rma-faq__cta {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .rma-faq__trigger {
+    padding: 14px 12px;
+  }
+
+  .rma-faq__panel {
+    padding: 0 12px 20px;
+  }
+
+  .rma-faq__question {
+    line-height: 28px;
+  }
+}
+
+/* --- bottom-cta/bottom-cta.css --- */
+/* Bottom CTA - Figma section 8 (4015:1216) */
+
+.rma-bottom-cta {
+  text-align: center;
+}
+
+.rma-bottom-cta__inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rma-bottom-cta h2.rma-bottom-cta__title {
+  margin-bottom: 16px;
+}
+
+.rma-bottom-cta p.rma-bottom-cta__copy {
+  margin-bottom: 14px;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rma-bottom-cta__btn {
+  display: inline-block;
+}
+
+@media (max-width: 767.98px) {
+  .rma-bottom-cta h2.rma-bottom-cta__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+

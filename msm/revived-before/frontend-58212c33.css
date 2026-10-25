@@ -1,0 +1,162 @@
+/* WebFX ReviewAccelerationFX Frontend Styles */
+
+.webfx-reviews {
+    margin: 20px 0;
+}
+
+.webfx-reviews-list .webfx-review-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #e8e1d6;
+}
+
+.webfx-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.webfx-reviews-grid .webfx-review-item {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-top: 4px solid #0073aa;
+}
+
+.webfx-review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.webfx-review-author {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.webfx-review-rating {
+    flex-shrink: 0;
+}
+
+.webfx-stars {
+    display: inline-flex;
+    gap: 2px;
+}
+
+.webfx-star {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.webfx-star-filled {
+    color: #ffb900;
+}
+
+.webfx-star-empty {
+    color: #ddd;
+}
+
+.webfx-review-content {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.webfx-review-content p {
+    margin: 0 0 10px 0;
+    color: #555;
+}
+
+.webfx-review-content p:last-child {
+    margin-bottom: 0;
+}
+
+.webfx-review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 10px;
+}
+
+.webfx-review-date {
+    font-style: italic;
+}
+
+.webfx-review-site {
+    font-weight: 500;
+}
+
+.webfx-review-site a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+.webfx-review-site a:hover {
+    text-decoration: underline;
+}
+
+.webfx-reviews-no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-style: italic;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .webfx-review-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .webfx-review-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .webfx-reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+    .webfx-reviews-list .webfx-review-item,
+    .webfx-reviews-grid .webfx-review-item {
+        background: #2c2c2c;
+        color: #e1e1e1;
+    }
+    
+    .webfx-review-author {
+        color: #fff;
+    }
+    
+    .webfx-review-content p {
+        color: #ccc;
+    }
+    
+    .webfx-review-footer {
+        color: #aaa;
+        border-top-color: #444;
+    }
+    
+    .webfx-reviews-no-results {
+        background: #2c2c2c;
+        color: #aaa;
+    }
+}
